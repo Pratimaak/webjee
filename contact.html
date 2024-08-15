@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+  </head>
+
+  <body>
+
+    <a href="/index.html">contact me</a>
+    &nbsp; &nbsp;
+    <a href="https://unsplash.com/" target="_blank">visit unsplash</a>
+    <h1>Contact me</h1>
+    <fieldset>
+      <legend>Some information</legend>
+      <!-- for query get -->
+      <form action="mailto:rabyn900@gmail.com" method="post">
+
+        <!-- label for ma ra name ma same lekhna parxa -->
+        <label for="email">Email</label>
+        <input type="email" placeholder="@example.com" required name="email"><br><br>
+        <label for="name">Name</label>
+        <input type="text" name="name"><br><br>
+        <label for="phone">Phone number</label>
+        <input type="number" name="phone"><br><br>
+        <h3>Gender</h3>
+        <label for="male">Male</label>
+        <input type="radio" value="male" id="male" name="gender">
+        <label for="female">Female</label>
+        <input type="radio" value="female" id="female" name="gender">
+        <label for="other">Other</label>
+        <input type="radio" value="other" id="other" name="gender">
+        <!-- shift+alt+drop -->
+        <h3>Hobbies:</h3>
+        <label for="read">Read</label>
+        <input type="checkbox" value="read" id="read" name="hobbies">
+        <label for="travel">Travel</label>
+        <input type="checkbox" value="travel" id="travel" name="hobbies">
+        <label for="sing">Sing</label>
+        <input type="checkbox" value="sing" id="sing" name="hobbies">
+        <h3>Country</h3>
+        <select name="country" id="country">
+          <option value="nepal">Nepal</option>
+          <option value="india">India</option>
+          <option value="china">China</option>
+          <optgroup label="Dev">
+            <option value="java">Java</option>
+            <option value="css">Css</option>
+          </optgroup>
+        </select>
+        <h3>any queries</h3>
+        <textarea name="msg" placeholder="Type something" id="msg" cols="10" rows="10"
+          maxlength="100"></textarea><br><br>
+        <label for="date">Date</label>
+        <input type="date"><br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+      </form>
+    </fieldset>
+
+  </body>
+
+</html>
